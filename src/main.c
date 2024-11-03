@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "table.h"
 #include "persistence.h"
-
+#include "crypt.c"
 #define FILENAME "./data/database.dat"
 
 int main() {
@@ -14,12 +14,13 @@ int main() {
 
    
     printf("\nbefore : %d %d  %d\n",last_id(table),table->capacity,table->num_rows);
+    //insert_row(table, 1, "alicex", "alicex@example.com",hash_to_hex_string("mskdms"));
+    //insert_row(table, 3, "bobox2", "alicex@example.com");
     
+    insert_row_autocrument(table, "test1", "test1@example.com",hash_to_hex_string("test1"));
+    insert_row_autocrument(table, "test1", "test1@example.com",hash_to_hex_string("test1"));
     
-    insert_row_autocrument(table, "test1", "test1@example.com","test1");
-    insert_row_autocrument(table, "test1", "test1@example.com","test1");
-    
-    
+    //printf("\nbefore : %d %d  %d\n",last_id(table),table->capacity,table->num_rows);
 
 
     select_statement(table);
