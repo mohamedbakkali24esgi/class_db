@@ -1,2 +1,7 @@
-build
-data
+/build/*
+!/build/ici
+!/build/
+
+/data/*
+!/data/ici
+!/data/
