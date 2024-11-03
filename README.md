@@ -1,6 +1,7 @@
 ### Documentation de la Base de Données Simple en C
 
-Ce projet implémente une base de données simple en C qui permet de stocker des lignes de données en mémoire et de les sauvegarder sur le disque pour garantir la persistance entre les exécutions. Les données peuvent être chargées depuis un fichier 
+![C](https://img.shields.io/badge/Language-C-blue?logo=c&logoColor=white)
+Ce projet implémente une base de données simple en C qui permet de stocker des lignes de données en mémoire et de les sauvegarder sur le disque pour garantir la persistance entre les exécutions. Les données peuvent être chargées depuis un fichier 'database.db'
 
 ---
 
